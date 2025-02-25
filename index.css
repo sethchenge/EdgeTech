@@ -411,7 +411,6 @@ color: #178bd9;
   color: #6c757d; /* Optional: Grey color for the text */
 }
 
-
 .btn .material-icons {
   position: absolute;
   left: 120px;
@@ -427,6 +426,16 @@ color: #178bd9;
   }
   100% {
       transform: scale(1);
+  }
+}
+/* Responsiveness in all devices */
+@media (max-width: 768px) {
+  .btn .material-icons {
+    left: 50px;
+    font-size: 24px;
+  }
+  .btn .btn-text {
+    margin-left: 5px;
   }
 }
 /* Custom button styles */
