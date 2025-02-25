@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdgeTech Company</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Logo.jpeg" alt="Logo" class="logo">
+                EdgeTech
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#developerPortfolio" disabled>My Portfolio</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="display-3 mb-4 fade-in">Thank you for visiting EdgeTech Company</h1>
+            <p class="lead mb-4 fade-in">We provide quality and affordable services to all our customers</p>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#developerPortfolio">See Developer</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Why EdgeTech Company?</h2>
+                    <p class="lead">We provide quality services such as repair, troubleshooting software installation among other servics in an affordable way to all our customers.</p>
+                    <div class="mt-4">
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                            <div>
+                                <h5>Quality Services</h5>
+                                <p>Our team consists of certified personnels that provide quality services fairly to all customers.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                            <div>
+                                <h5>Affordable</h5>
+                                <p>Our services are affordable to everyone who wishes to contact us.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                            <div>
+                                <h5>Educational Programs</h5>
+                                <p>We also offer educational programs to those willing to join our team in empowering the society.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="display.jpeg" alt="Display Company Image" class="img-fluid rounded shadow about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 services-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-box service-icon"></i>
+                            <h4 class="card-title">Computer Packages</h4>
+                            <p class="card-text">Unlock your potential with our hands-on computer packages training.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#infantModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tools service-icon"></i>
+                            <h4 class="card-title">Troubleshooting</h4>
+                            <p class="card-text">Master the art of troubleshooting with our expert-led training sessions.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#toddlerModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-network-wired service-icon"></i>
+                            <h4 class="card-title">Networking</h4>
+                            <p class="card-text">Gain the expertise to build and manage robust networks with our comprehensive networking training.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#preschoolModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-laptop-medical feature-icon"></i>
+                    <h4>IT Consultation</h4>
+                    <p>Providing technical support and advice on best practices for IT infrastructure </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-cloud feature-icon"></i>
+                    <h4>Cloud services</h4>
+                    <p>Assisting with setup of cloud storage and cloud based applications</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-code feature-icon"></i>
+                    <h4>Web development</h4>
+                    <p>Designing and maintaining websites, both front-end and back-end</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h4>Security Services</h4>
+                    <p>Implementing security measures like firewalls and anti-virus programs to protect data</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Contact Us</h2>
+                    <p class="mb-4">Have questions? We're here to help! Reach out to us using any of the following methods:</p>
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-map-marker-alt text-primary me-3 mt-1"></i>
+                        <p>Meru-Maua road, Fikim Room D6</p>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-phone text-primary me-3 mt-1"></i>
+                        <p>+254 721156350</p>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-envelope text-primary me-3 mt-1"></i>
+                        <p>chengeseth25@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Chat with us Now</h4>
+                            <a href="https://wa.me/254721156350?text=Thank%20you%20for%20contacting%20EdgeTech" class="btn btn-primary btn-lg w-100">
+                                <span class="material-icons">chat</span>
+                                <span class="btn-text">WhatsApp</span>
+                            </a>
+                            <p class="text-center mt-3">or</p>
+                            <a href="https://www.facebook.com/profile.php?id=100073125860236&mibextid=ZbWKwL" class="btn btn-outline-primary w-100">
+                                <span class="material-icons">facebook</span>
+                                <span class="btn-text">Facebook</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <iv class="row">
+                <div class="col-md-6">
+                    <h5>EdgeTech Company</h5>
+                    <p>A transformative company into digital world.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-light">About Us</a></li>
+                        <li><a href="#services" class="text-light">Services</a></li>
+                        <li><a href="#contact" class="text-light">Contact Us</a></li>
+                        <li><a href="mailto:chengeseth25@gmail.com?subject=Registration%20Inquiry&body=I%20am%20interested%20in%20registering%20for%20your%20services." class="text-light">Email us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100073125860236&mibextid=ZbWKwL" class="text-light me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light me-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Coming soon to Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/254721156350" class="text-light me-2"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="text-center">
+            <p>&copy; 2025 EdgeTech Company. All rights reserved.</p>
+            <p><i><tt>&copy; Seth Chenge. Developer</tt></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script>
+// Fade in elements on scroll
+document.addEventListener('DOMContentLoaded', function() {
+    const fadeElements = document.querySelectorAll('.fade-in');
+    
+    function checkFade() {
+        fadeElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementVisible = 150;
+            
+            if (elementTop < window.innerHeight - elementVisible) {
+                element.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkFade);
+    checkFade(); // Check on initial load
+});
+</script>
+
+<!-- Service Modals -->
+<!-- Computer Packages Modal -->
+<div class="modal fade service-modal" id="infantModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Computer Packages programs</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="package.jpeg" class="img-fluid rounded" alt="Known Packages">
+                        <div class="pricing-box mt-4">
+                            <h4 class="text-center mb-3">Pricing Plans</h4>
+                            <div class="price-option p-3 mb-2">
+                                <h5>Full-Time Course</h5>
+                                <p class="price">3000 kshs</p>
+                                <small>Monday - Friday, 8:30 AM - 4:30 PM</small>
+                            </div>
+                            <div class="price-option p-3">
+                                <h5>Part-Time Course</h5>
+                                <p class="price">1500 kshs</p>
+                                <small>3 days per week, flexible scheduling</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Program Features</h4>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Microsoft Word</li>
+                            <li><i class="fas fa-check-circle"></i> Microsoft Excel</li>
+                            <li><i class="fas fa-check-circle"></i> Microsoft Powerpoint</li>
+                            <li><i class="fas fa-check-circle"></i> Microsoft Access</li>
+                            <li><i class="fas fa-check-circle"></i> Microsoft Publisher</li>
+                        </ul>
+                        <div class="included-services mt-4">
+                            <h5>Included in Price:</h5>
+                            <ul class="service-features">
+                                <li><i class="fas fa-globe"></i> Email & Internet</li>
+                                <li><i class="fas fa-laptop-code"></i> Web Design & wireframing</li>
+                                <li><i class="fas fa-desktop"></i> Operating Systems</li>
+                            </ul>
+                        </div>
+                        <div class="modal-cta">
+                            <a href="mailto:chengeseth25@gmail.com?subject=Registration%20Inquiry&body=I%20am%20interested%20in%20registering%20for%20your%20services." class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Troubleshooting Modal -->
+<div class="modal fade service-modal" id="toddlerModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Troubleshooting Services</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="troubleshooting.jpeg" class="img-fluid rounded" alt="Toddler Program">
+                        <div class="pricing-box mt-4">
+                            <h4 class="text-center mb-3">Pricing Plans</h4>
+                            <div class="price-option p-3 mb-2">
+                                <h5>Morning Program</h5>
+                                <p class="price">1200 kshs/week</p>
+                                <small>Monday - Friday, 8:30 AM - 1:30 PM</small>
+                            </div>
+                            <div class="price-option p-3">
+                                <h5>Evening program</h5>
+                                <p class="price">1000 kshs/week</p>
+                                <small>Monday- Friday, 2:00 pm - 6:00 pm </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Program Features</h4>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i>Diagnosis and repair</li>
+                            <li><i class="fas fa-check-circle"></i> Data Recovery</li>
+                            <li><i class="fas fa-check-circle"></i> Configuration issues</li>
+                            <li><i class="fas fa-check-circle"></i> Virus and malware removal</li>
+                            <li><i class="fas fa-check-circle"></i> Performance Tuning</li>
+                        </ul>
+                        <div class="included-services mt-4">
+                            <h5>Included in Price:</h5>
+                            <ul class="service-features">
+                                <li><i class="fas fa-headset"></i> Remote support</li>
+                                <li><i class="fas fa-book"></i> Learning materials</li>
+                                <li><i class="fas fa-tools"></i> Technical Assistance</li>
+                            </ul>
+                        </div>
+                        <div class="modal-cta">
+                            <a href="mailto:chengeseth25@gmail.com?subject=Registration%20Inquiry&body=I%20am%20interested%20in%20registering%20for%20your%20services." class="btn btn-primary">Register Now</a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Networking Modal -->
+<div class="modal fade service-modal" id="preschoolModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Networking services</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="networks.jpeg" class="img-fluid rounded" alt="Preschool Program">
+                        <div class="pricing-box mt-4">
+                            <h4 class="text-center mb-3">Pricing Plans</h4>
+                            <div class="price-option p-3 mb-2">
+                                <h5>Full-Time Program</h5>
+                                <p class="price">3000 kshs/week</p>
+                                <small>Monday - Friday, 8:30 AM - 4:30 PM</small>
+                            </div>
+                            <div class="price-option p-3">
+                                <h5>Knight Program</h5>
+                                <p class="price">1500 kshs/week</p>
+                                <small>3 days per week, flexible scheduling</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Program Features</h4>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Network cabling</li>
+                            <li><i class="fas fa-check-circle"></i> firewalls configuration</li>
+                            <li><i class="fas fa-check-circle"></i> VPN setup</li>
+                            <li><i class="fas fa-check-circle"></i> Routers & switches </li>
+                            <li><i class="fas fa-check-circle"></i> Network security</li>
+                        </ul>
+                        <div class="included-services mt-4">
+                            <h5>Included in Price:</h5>
+                            <ul class="service-features">
+                                <li><i class="fas fa-wifi"></i> Wi-Fi network setup</li>
+                                <li><i class="fas fa-network-wired"></i> Hybrid Networking</li>
+                                <li><i class="fas fa-cloud"></i> Cloud computing</li>
+                            </ul>
+                        </div>
+                        <div class="modal-cta">
+                            <a href="mailto:chengeseth25@gmail.com?subject=Registration%20Inquiry&body=I%20am%20interested%20in%20registering%20for%20your%20services." class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--portfolio modal-->
+<div class="modal fade service-modal" id="developerPortfolio" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Welcome to my Portfolio, I am the developer of this site.</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="content" class="container mt-4">
+                    <div class="jumbotron text-center">
+                    <div class="profile-img-container">
+                        <img src="profile.jpeg" alt="Author" class="profile-img">
+                    </div>
+                    <p class="image-description">I am the CEO of EdgeTech,<br>
+                    Founded on 20<sup>th</sup>January 2025</p>
+                    <p id="typing-text" class="lead">I am Seth Chenge, a front-end developer.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
